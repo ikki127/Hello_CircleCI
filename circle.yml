@@ -1,0 +1,14 @@
+#
+#Build configuration for Circle CI
+#
+
+#Add the test machine
+machine:
+  # Java version to use
+  java:
+    version: openjdk8
+
+## Customize test commands
+test:
+  override:
+    - sh build.sh
